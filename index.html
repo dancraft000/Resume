@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancraft Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #e6d9ff 0%, #d9ecff 100%);
+            padding: 40px 20px;
+            color: #333;
+        }
+        
+        .resume {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #b8a3e8 0%, #93c5fd 100%);
+            padding: 50px 40px;
+            text-align: center;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .header .tagline {
+            font-size: 18px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 35px;
+        }
+        
+        .section-title {
+            font-size: 24px;
+            color: #7c3aed;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 3px solid #93c5fd;
+            font-weight: 600;
+        }
+        
+        .info-box {
+            background: linear-gradient(135deg, #f3f0ff 0%, #e0f2fe 100%);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid #7c3aed;
+        }
+        
+        .info-box p {
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        
+        .info-box p:last-child {
+            margin-bottom: 0;
+        }
+        
+        .position {
+            margin-bottom: 25px;
+        }
+        
+        .position-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+        
+        .position-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #5b21b6;
+        }
+        
+        .server-size {
+            font-size: 14px;
+            color: #0284c7;
+            font-weight: 500;
+        }
+        
+        .position-description {
+            color: #555;
+            line-height: 1.6;
+            margin-left: 20px;
+        }
+        
+        .position-description ul {
+            margin-top: 8px;
+            list-style-type: none;
+        }
+        
+        .position-description li:before {
+            content: "▹ ";
+            color: #7c3aed;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .skill-item {
+            background: linear-gradient(135deg, #f3f0ff 0%, #e0f2fe 100%);
+            padding: 15px;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: 500;
+            color: #5b21b6;
+            border: 2px solid #c4b5fd;
+        }
+        
+        .timeline-marker {
+            display: inline-block;
+            background: #93c5fd;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <div class="header">
+            <h1>Dancraft</h1>
+            <p class="tagline">Experienced Discord & Minecraft Server Staff Member</p>
+        </div>
+        
+        <div class="content">
+            <div class="section">
+                <h2 class="section-title">About Me</h2>
+                <div class="info-box">
+                    <p><strong>Experience:</strong> Nearly 1 year in Discord & Minecraft server moderation</p>
+                    <p><strong>Timezone:</strong> GMT (United Kingdom)</p>
+                    <p><strong>Known For:</strong> Being the go-to person for Discord staffing-related matters among friends and colleagues</p>
+                    <p><strong>Strength:</strong> Contributing as an amazing part of multiple staff teams across various server sizes</p>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Current Positions</h2>
+                
+                <div class="position">
+                    <span class="timeline-marker">CURRENT</span>
+                    <div class="position-header">
+                        <span class="position-title">Senior Admin @ Shatter MC</span>
+                        <span class="server-size">270 members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Manage staff team and operations</li>
+                            <li>Handle report tickets and player concerns</li>
+                            <li>Assist with staff documentation and systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Senior Moderator @ SMP Finder</span>
+                        <span class="server-size">19.4K members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Process partnership tickets and applications</li>
+                            <li>Perform server-wide moderation duties</li>
+                            <li>Previously held Admin role (demoted due to past inactivity)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Previous Experience</h2>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Staff Manager @ JustVanilla</span>
+                        <span class="server-size">540 members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Set up comprehensive staff documentation and systems</li>
+                            <li>Managed staff promotions and demotions</li>
+                            <li>Handled various administrative duties based on server needs</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Admin @ Speed SMP</span>
+                        <span class="server-size">800 members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Organized and ran community events</li>
+                            <li>Resolved Discord server technical issues</li>
+                            <li>Managed partnership tickets and general chat moderation</li>
+                            <li>Made decisions regarding server waves</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Admin @ Utopia Studios</span>
+                        <span class="server-size">840 members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Managed server roles and permissions</li>
+                            <li>Handled general server management tasks</li>
+                            <li>Enforced community rules and guidelines</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Manager @ Elemental PVP</span>
+                        <span class="server-size">270 members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Led and managed the entire staff team</li>
+                            <li>Created staff documentation and internal systems</li>
+                            <li>Provided general server support and assistance</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Senior Moderator @ Silo SMP</span>
+                        <span class="server-size">1K members</span>
+                    </div>
+                    <div class="position-description">
+                        <p>Minecraft and Discord server moderation, ticket management</p>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Admin @ Elemental SMP</span>
+                        <span class="server-size">200-327 members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Assisted with Minecraft server setup and configuration</li>
+                            <li>Recruited and onboarded new staff members</li>
+                            <li>Moderated both Discord and Minecraft server</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Manager @ SMP Scripts</span>
+                        <span class="server-size">150 members</span>
+                    </div>
+                    <div class="position-description">
+                        <ul>
+                            <li>Managed entire staff team operations</li>
+                            <li>Created and implemented new staff application system</li>
+                            <li>Handled staff promotions and demotions</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Moderator @ SMP Sales</span>
+                        <span class="server-size">1.7K members</span>
+                    </div>
+                    <div class="position-description">
+                        <p>Discord moderation and partnership ticket management</p>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Moderator @ Shattered Realms</span>
+                        <span class="server-size">100 members</span>
+                    </div>
+                    <div class="position-description">
+                        <p>General moderation duties</p>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Moderator @ Cycle SMP</span>
+                        <span class="server-size">130 members</span>
+                    </div>
+                    <div class="position-description">
+                        <p>Community moderation and support</p>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Staff @ Liffey Events</span>
+                        <span class="server-size">300 members</span>
+                    </div>
+                    <div class="position-description">
+                        <p>Event coordination and Discord server moderation</p>
+                    </div>
+                </div>
+                
+                <div class="position">
+                    <div class="position-header">
+                        <span class="position-title">Staff @ Liffcord & Popup Central</span>
+                        <span class="server-size">85 & 20 members</span>
+                    </div>
+                    <div class="position-description">
+                        <p>Event management and general server moderation</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2 class="section-title">Core Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">Discord Moderation</div>
+                    <div class="skill-item">Minecraft Server Management</div>
+                    <div class="skill-item">Staff Team Leadership</div>
+                    <div class="skill-item">Partnership Management</div>
+                    <div class="skill-item">Event Coordination</div>
+                    <div class="skill-item">Documentation Creation</div>
+                    <div class="skill-item">Ticket Management</div>
+                    <div class="skill-item">Community Building</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
